@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Navigation from '../components/Navigation.astro';
 ---
 
 <Layout title="not Welcome to Astro.">
@@ -34,8 +33,6 @@ import Navigation from '../components/Navigation.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-
-    <Navigation />
 
 		<h1>not Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
@@ -73,7 +70,7 @@ import Navigation from '../components/Navigation.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		/* color: white; */
 		font-size: 20px;
 		line-height: 1.6;
 	}
