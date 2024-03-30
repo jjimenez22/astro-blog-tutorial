@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Greeting from '../components/Greeting';
 ---
 
-<Layout title="not Welcome to Astro.">
+<Layout title="Welcome to Astro.">
 	<main>
 		<svg
 			class="astro-a"
@@ -34,7 +35,8 @@ import Card from '../components/Card.astro';
 			</defs>
 		</svg>
 
-		<h1>not Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<Greeting client:load messages={['Hola', 'Ola', 'Hallo', 'Habari']} />
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
